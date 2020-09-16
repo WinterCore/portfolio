@@ -214,7 +214,7 @@ a, a:visited, a:hover {
     padding:8px 10px;
     border:1px solid #fff;
     border-radius:50px;
-    margin: 5px 10px;
+    margin: 5px 5px;
 }
 #used:hover {
     cursor:text;
@@ -246,7 +246,7 @@ a, a:visited, a:hover {
 }
 .btn_one:hover {
     cursor:pointer;
-    color:var(--bg-color);
+    color:var(--bg-color)!important;
     background:#fff;
 }
 .btn_two {
