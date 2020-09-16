@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WinterCore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101592276-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-101592276-2');
+    </script>
+
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Hasan Kharouf</h1>
+        <h2>Full Stack Web Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a target="_blank" href="https://github.com/WinterCore" class="social"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a target="_blank" href="mailto:hogobbl@gmail.com" class="social"><i class="far fa-envelope"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Works</h1>
+        <div class="works-container">
+            <section>
+                <h2>Icicle</h2>
+                <p>
+                    Icicle is youtube real-time music player, You can start your own stream and invite your friends to listen along with you, in real time. You can also create playlists, import youtube playlists & much more.
+                </p>
+                <p>
+                    <img alt="icicle" src="/assets/projects/icicle.png" />
+                </p>
+                <div id="used">
+                    <div>HTML5</div>
+                    <div>CSS3</div>
+                    <div>Typescript</div>
+                    <div>React</div>
+                    <div>Node.js/Express</div>
+                    <div>Socket.io</div>
+                </div>
+                <a target="_blank" href="https://icicle.wintercore.dev" class="btn_two">Live Demo</a>
+                <a target="_blank" href="https://github.com/WinterCore/icicle" class="btn_two">Source</a>
+            </section>
+            <section>
+                <h2>React Pattern Lock</h2>
+                <p>
+                    Android's pattern lock implementation in React as a reuseable component. It has support for multiple sizes up to 15x15.
+                </p>
+                <p>
+                    <img alt="react-pattern-lock" src="/assets/projects/react-pattern-lock.png" />
+                </p>
+                <div id="used">
+                    <div>HTML5</div>
+                    <div>CSS3</div>
+                    <div>Typescript</div>
+                    <div>React</div>
+                </div>
+                <a target="_blank" href="https://n5j7knjo54.csb.app/" class="btn_two">Live Demo</a>
+                <a target="_blank" href="https://github.com/WinterCore/react-pattern-lock" class="btn_two">Source</a>
+            </section>
+            <section>
+                <h2>Potato Articles</h2>
+                <p>
+                    A mini blog about vegetables and mainly potatos. Supports creating posts, adding comments, adding likes. login/registration.
+                </p>
+                <p>
+                    <img alt="potato articles" src="/assets/projects/potato-rails.png" />
+                </p>
+                <div id="used">
+                    <div>HTML5</div>
+                    <div>CSS3</div>
+                    <div>Ruby on Rails</div>
+                    <div>PostgreSQL</div>
+                </div>
+                <a target="_blank" href="https://potato.upperdown.me" class="btn_two">Live Demo</a>
+                <a target="_blank" href="https://github.com/WinterCore/rails-capstone-potato" class="btn_two">Source</a>
+            </section>
+            <section>
+                <h2>JSONERINO</h2>
+                <p>
+                    A JSON parser built with Ruby.
+                </p>
+                <p>
+                    <img alt="jsonerino" src="/assets/projects/jsonerino.gif" />
+                </p>
+                <div id="used">
+                    <div>Ruby</div>
+                </div>
+                <a target="_blank" href="https://rubygems.org/gems/jsonerino" class="btn_two">Live Demo</a>
+                <a target="_blank" href="https://github.com/WinterCore/microverse-ruby-capstone-json-parser/" class="btn_two">Source</a>
+            </section>
+            <section>
+                <h2>CSocket TicTacToe</h2>
+                <p>
+                    Multiplayer tic tac toe that can be played over the internet.
+                </p>
+                <p>
+                    <img alt="tic-tac-toe" src="/assets/projects/ttt.gif" />
+                </p>
+                <div id="used">
+                    <div>C</div>
+                </div>
+                <a target="_blank" href="https://github.com/WinterCore/csocket-tic-tac-toe" class="btn_two">Source</a>
+            </section>
+            <section>
+                <h2>Time.io</h2>
+                <p>
+                    Time.IO is a tool to help you keep track of how much time you spend on doing something.
+                </p>
+                <p>
+                    <img alt="time manager" src="/assets/projects/time-io.gif" />
+                </p>
+                <div id="used">
+                    <div>Node.js</div>
+                </div>
+                <a target="_blank" href="https://github.com/WinterCore/time.io" class="btn_two">Source</a>
+                <a target="_blank" href="https://www.npmjs.com/package/time.io" class="btn_two">Demo</a>
+            </section>
+            <section>
+                <h2>Zattix online shop</h2>
+                <p>
+                    This is a design implementation of <a href="https://www.behance.net/gallery/24796463/ZATTIX">ZATTIX</a>. which is an online shop.
+                </p>
+                <p>
+                    <img alt="online shop" src="/assets/projects/zattix.png" />
+                </p>
+                <div id="used">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>Javascript</div>
+                </div>
+                <a target="_blank" href="https://github.com/WinterCore/time.io" class="btn_two">Source</a>
+                <a target="_blank" href="https://www.npmjs.com/package/time.io" class="btn_two">Live Demo</a>
+            </section>
+            <section>
+                <h2>NoteIt</h2>
+                <p>
+                    A simple app to write notes.
+                </p>
+                <p>
+                    <img alt="noteit" src="/assets/projects/noteit.png" />
+                </p>
+                <div id="used">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>Javascript</div>
+                    <div>Node.js (Express)</div>
+                </div>
+                <a target="_blank" href="https://github.com/WinterCore/NoteIt" class="btn_two">Source</a>
+                <a target="_blank" href="https://noteit.upperdown.me" class="btn_two">Live Demo</a>
+            </section>
+        </div>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>About</h1>
+        <section>
+            <h2>About me</h2>
+            <p>
+                After trying out programming for the first time when I was 19. I discovered that I couldn't get enough of it.
+                <br/>
+                Having the ability to create literally anything, the only limit being my imagination. I started learning about web development, and the more I learn the more I feel like there's still a lot more to learn
+                <br/>
+                <br/>
+                I landed my first job in 2018 as a back-end developer where I got to learn tons of new things and work with amazing colleagues.
+                I managed to introduce the frontend team to React (a front-end framework) as a complete replacement for jQuery.
+                Later I had the chance to mentor and do code reviews for 2 junior web developers.
+                And day by day, my love for programming just kept growing.
+                <br/>
+                <br/>
+                Recently I decided to join Microverse, an online coding school. It allowed me to work with so many different developers on different projects, doing pair programming, and working remotely.
+                <br/>
+                <br/>
+                In my free time, I like to learn C and Haskell, these two programming languages may not help me in finding a job, but they definitely changed the way I think and made me a better programmer.
+            </p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>
+                HTML, CSS, Javascript, Typescript, Ruby, Ruby on Rails, React & Redux, jQuery, Webpack, Node.js (Express), SQL, MongoDB, MySQL, Git, PHP, Laravel, C, Haskell, Vue, Next.js, Firebase, PostgreSQL, GraphQL, CI/CD, Linux Server Administration.
+            </p>
+        </section>
+        <section>
+            <h2>Links</h2>
+            <a target="_blank" href="https://drive.google.com/file/d/1LhW93xNYEJ4ier194nX6Kzi8SF8W-1rf/view?usp=sharing" class="btn_one">Resume</a>
+            <a target="_blank" href="https://www.codewars.com/users/WinterCore" class="btn_one">Codewars</a>
+            <a target="_blank" href="https://www.npmjs.com/~wintercore" class="btn_one">npm</a>
+        </section>
+        <p class="smalltext">
+            Thanks to <a target="_blank" href="https://github.com/imfunniee">imfunniee</a> for this portfolio <a target="_blank" href="https://github.com/imfunniee/fimbo">template</a>. Make sure to check out his work.
+        </p>
+    </div>
+    <script src="/assets/js/index.js" type="text/javascript"></script>
+    <script src="/assets/js/particles.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
