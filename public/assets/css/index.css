@@ -214,9 +214,7 @@ a, a:visited, a:hover {
     padding:8px 10px;
     border:1px solid #fff;
     border-radius:50px;
-}
-#used div + div {
-    margin-left: 10px;
+    margin: 5px 10px;
 }
 #used:hover {
     cursor:text;
@@ -243,6 +241,8 @@ a, a:visited, a:hover {
     font-weight:bold;
     transition:0.4s ease-in-out;
     text-decoration: none;
+    display: inline-block;
+    margin: 8px 0;
 }
 .btn_one:hover {
     cursor:pointer;
@@ -251,6 +251,8 @@ a, a:visited, a:hover {
 }
 .btn_two {
     font-size:18px;
+    display: inline-block;
+    margin: 8px 0;
     font-family: 'Josefin Sans', sans-serif;
     color:var(--bg-color)!important;
     background:#fff!important;
@@ -266,9 +268,6 @@ a, a:visited, a:hover {
     padding:8px 60px;
 }
 
-section .btn_two + .btn_two {
-    margin-left: 10px;
-}
 ::placeholder {
     color:#fff;
 }
